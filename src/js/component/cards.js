@@ -2,14 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const data = {
-	image:
-		"https://ucarecdn.com/f8cf81eb-3bab-4bba-9431-668884eab174/-/resize/300x/",
-	cardTitle: "Bob Dylan",
+	img:
+		"https://www.gaithersburgdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.png",
+	cardTitle: "Card Title",
 	cardDescription:
-		"Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer/songwriter, author, and artist who has been an influential figure in popular music and culture for more than five decades.",
+		"Some quick example text to build on the card title and make up the bulk of the cards content.",
 	button: {
-		url: "https://en.wikipedia.org/wiki/Bob_Dylan",
-		label: "Go to wikipedia"
+		url: "https://www.google.com",
+		label: "Read More"
 	}
 };
 
@@ -17,13 +17,15 @@ const data = {
 export function Cards(props) {
 	return (
 		<div className="card mb-5">
-			<img className="card-img-top" src="..." alt="Card image cap" />
+			<img
+				className="card-img-top"
+				src="https://www.gaithersburgdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.png"
+				alt="Card image cap"
+			/>
+
 			<div className="card-body">
-				<h5 className="card-title">Card title</h5>
-				<p className="card-text">
-					Some quick example text to build on the card title and make
-					up the bulk of the cards content.
-				</p>
+				<h5 className="card-title">{data.cardTitle}</h5>
+				<p className="card-text">{data.cardDescription}</p>
 				<a href="#" className="btn btn-primary">
 					Read More
 				</a>

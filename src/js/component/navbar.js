@@ -5,7 +5,7 @@ export function NavBar() {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white justify-content-between">
 			<a className="navbar-brand" href="#">
-				Start Bootstrap
+				Landing Page
 			</a>
 			<form className="form-inline">
 				<button
