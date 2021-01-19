@@ -1,27 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const Cards = props => {
-	return (
-		<div className="col-3 mb-5  ">
-			<div
-				className="cards d-flex align-items-center flex-column border border-black border-top-0 mb-5 text-white "
-				style={{ width: "220px;" }}>
-				<div className="card1" />
-				<img
-					className="cardImage1"
-					src={props.imageUrl}
-					alt="Card image cap"
-				/>
-				<h5 className="cardTitle1 pt-1 ">{props.title}</h5>
-				<p className="cardText1 p-2">{props.text}</p>
+const data = {
+	image:
+		"https://ucarecdn.com/f8cf81eb-3bab-4bba-9431-668884eab174/-/resize/300x/",
+	cardTitle: "Bob Dylan",
+	cardDescription:
+		"Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer/songwriter, author, and artist who has been an influential figure in popular music and culture for more than five decades.",
+	button: {
+		url: "https://en.wikipedia.org/wiki/Bob_Dylan",
+		label: "Go to wikipedia"
+	}
+};
 
-				<a
-					href={props.buttonUrl}
-					className="cardButton1 btn btn-dark text-white bg-secondary mb-4 mt-2">
-					{props.buttonLabel}
+//Cards
+export function Cards(props) {
+	return (
+		<div class="card m-5">
+			<img class="card-img-top" src="..." alt="Card image cap" />
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">
+					Some quick example text to build on the card title and make
+					up the bulk of the cards content.
+				</p>
+				<a href="#" class="btn btn-primary">
+					Go somewhere
 				</a>
 			</div>
 		</div>
 	);
-};
+}

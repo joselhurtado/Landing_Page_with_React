@@ -13,28 +13,23 @@ var copy = {
 };
 
 // JumboTron
-export const JumboTron = () => {
+export function JumboTron() {
 	return (
-		<div className="container mt-5  pr-2">
-			<div className="row">
-				<div className="col-12  m-auto  ">
-					<div className="jumbotron text-white pt-4">
-						<h1 className="title">{copy.title}</h1>
-						<p className="text">
-							{copy.text}
-							<br />
-							{copy.text2}
-							<br />
-						</p>
-						<a
-							className="button jumbotron-button btn mt-3 btn-lg bg-white text-dark font-weight-bold"
-							href={copy.button.url}
-							role="button">
-							{copy.button.label}
-						</a>
-					</div>
-				</div>
-			</div>
+		<div className="jumbotron m-5">
+			<h1 className="display-4">A Warm Welcome!</h1>
+			<p className="lead">
+				<b>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt
+					odit vero qliquid similque quaerat nam nobis ilo aspernatur
+					vitae fugiat numquam repellat.
+				</b>
+			</p>
+			<p className="lead">
+				<a className="btn btn-primary btn-lg" href="#" role="button">
+					Call to action!
+				</a>
+			</p>
 		</div>
 	);
-};
+}
