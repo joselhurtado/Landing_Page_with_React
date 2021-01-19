@@ -15,7 +15,7 @@ var copy = {
 // JumboTron
 export function JumboTron() {
 	return (
-		<div className="jumbotron m-5">
+		<div className="jumbotron mt-5">
 			<h1 className="display-4">A Warm Welcome!</h1>
 			<p className="lead">
 				<b>

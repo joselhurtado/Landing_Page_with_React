@@ -11,7 +11,7 @@ export function Home() {
 			<div className="container">
 				<JumboTron />
 				<br />
-				<div className="row">
+				<div className="card-deck">
 					<Cards />
 					<Cards />
 					<Cards />
