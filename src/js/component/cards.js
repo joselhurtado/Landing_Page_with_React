@@ -1,35 +1,31 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const data = {
-	img:
-		"https://www.gaithersburgdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.png",
-	cardTitle: "Card Title",
-	cardDescription:
-		"Some quick example text to build on the card title and make up the bulk of the cards content.",
-	button: {
-		url: "https://www.google.com",
-		label: "Read More"
-	}
-};
-
-//Cards
-export function Cards(props) {
+export function Card(props) {
 	return (
-		<div className="card mb-5">
-			<img
-				className="card-img-top"
-				src="https://www.gaithersburgdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.png"
-				alt="Card image cap"
-			/>
-
-			<div className="card-body">
-				<h5 className="card-title">{data.cardTitle}</h5>
-				<p className="card-text">{data.cardDescription}</p>
-				<a href="#" className="btn btn-primary">
-					Read More
-				</a>
+		<div className="card-group">
+			<div className="card m-2" style={{ minWidth: "18rem" }}>
+				<img
+					className="card-img-top"
+					src="http://placehold.it/500x325.jpg"
+					alt="text image holder"
+				/>
+				<div className="card-body justify-content-between">
+					<h5 className="card-title">{props.title}</h5>
+					<p className="card-text">{props.text}</p>
+				</div>
+				<div className="card-footer">
+					<a href="#" className="btn btn-primary">
+						{props.footer}
+					</a>
+				</div>
 			</div>
 		</div>
 	);
 }
+
+Card.propTypes = {
+	title: PropTypes.string,
+	text: PropTypes.string,
+	footer: PropTypes.string
+};

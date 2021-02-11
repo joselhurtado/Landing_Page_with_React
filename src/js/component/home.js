@@ -1,21 +1,44 @@
 import React from "react";
-import { NavBar } from "./navbar.js";
-import { JumboTron } from "./jumbotron.js";
-import { Cards } from "./cards.js";
+import { Navbar } from "./navbar.js";
+import { Jumbotron } from "./jumbotron.js";
+import { Card } from "./cards.js";
 import { Footer } from "./footer.js";
 
 export function Home() {
 	return (
 		<div>
-			<NavBar />
+			<Navbar />
 			<div className="container">
-				<JumboTron />
-				<br />
-				<div className="card-deck">
-					<Cards />
-					<Cards />
-					<Cards />
-					<Cards />
+				<Jumbotron />
+				<div className="container-fluid row">
+					<Card
+						title="This is a Card Test!"
+						text="Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Explicabo magni sapiente, tempore debitis beatae
+                        culpa natus architecto."
+						footer="Find out more!"
+					/>
+					<Card
+						title="This is a Card Test!"
+						text="Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Explicabo magni sapiente, tempore debitis beatae
+                        culpa natus architecto."
+						footer="Find out more!"
+					/>
+					<Card
+						title="This is a Card Test!"
+						text="Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Explicabo magni sapiente, tempore debitis beatae
+                        culpa natus architecto."
+						footer="Find out more!"
+					/>
+					<Card
+						title="This is a Card Test!"
+						text="Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Explicabo magni sapiente, tempore debitis beatae
+                        culpa natus architecto."
+						footer="Find out more!"
+					/>
 				</div>
 			</div>
 			<Footer />

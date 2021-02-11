@@ -1,21 +1,8 @@
 import React from "react";
 
-var copy = {
-	title: "Hello, world!",
-	text1:
-		"This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
-	text2:
-		"It uses utility classes for typography and spacing to space content out within the larger container.",
-	button: {
-		url: "#",
-		label: "Read More"
-	}
-};
-
-// JumboTron
-export function JumboTron() {
+export function Jumbotron() {
 	return (
-		<div className="jumbotron mt-5">
+		<div className="jumbotron">
 			<h1 className="display-4">A Warm Welcome!</h1>
 			<p className="lead">
 				<b>

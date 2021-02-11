@@ -1,11 +1,11 @@
 import React from "react";
 
-// NavBar
-export function NavBar() {
+//create your first component
+export function Navbar() {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white justify-content-between">
 			<a className="navbar-brand" href="#">
-				Landing Page
+				Start Bootstrap
 			</a>
 			<form className="form-inline">
 				<button
